@@ -2,10 +2,12 @@ import React from 'react'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import {TextField } from '@mui/material';
+import { Link } from 'react-router-dom';
+
+
 
 
 function SignUp() {
@@ -24,8 +26,7 @@ return (
         
         </CardContent>
         <Typography gutterBottom color="text.secondary"  sx={{textAlign:"center"}}>Already have account ?
-        
-        Login
+        <Link to="/login">Login</Link>
         </Typography>
         <CardActions>
         <Button size="small" fullWidth variant='contained'>signup</Button>

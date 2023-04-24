@@ -6,6 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import {TextField } from '@mui/material';
+import  { Link } from 'react-router-dom'
 
 
 function Login() {
@@ -23,7 +24,8 @@ return (
         
         </CardContent>
         <Typography gutterBottom color="text.secondary"  sx={{textAlign:"center"}}>Don't have account ?
-            Signup
+        <Link to="/signup">Signup</Link>
+            
         </Typography>
         <CardActions>
         <Button size="small" fullWidth variant='contained'>signup</Button>
